@@ -18,7 +18,7 @@ The main components are:
 2) Source: `source dlc_venv/bin/activate`
 3) Install dependencies: `pip install -r requirements.txt`
 4) Run `live_finger_tracker.py` and supply your model path
-5) Run `motor2D.ino` and open the Serial monitor to begin calibrating. 
+5) Compile and run `motor2D.ino` and open the Serial monitor to begin calibrating. 
 
 To test if Python TensorFlow can detect your GPU, you can use the following command in the terminal `python -c "import tensorflow as tf; tf.config.list_physical_devices('GPU')"`. If there are issues, refer to [this](https://www.tensorflow.org/install/pip). Be wary that `pip install tensorflow[and-cuda]` will install a version of tensorflow greater than what is currently supported by DeepLabCut (`tensorflow==2.12.0`)
 
